@@ -1,8 +1,5 @@
-# Matthew's Build System
-# Inspired From ModernCppStarter
+# Windows and buttons - the SFML template
 
-https://github.com/MatthewAlgo/ModernCppStarter
+https://github.com/TheLartians/ModernCppStarter
 
-Supports doc generation, library compilation, integrated package manager (CPM), unit testing.
-Run the bash scripts to execute your code. The structure uses CMake.
-I have adapted it to easier compile and link libraries and executables.
+A C++ app featuring 4 windows running in sepparate threads, a starting point for a multi-threaded GUI app
