@@ -1,0 +1,14 @@
+# If we want to preserve the options from one system to another
+# /.vscode
+
+/cpm_modules
+.DS_Store
+
+# Build Directory
+/build
+
+# Out directory
+/out
+
+# .vs folder
+/.vs

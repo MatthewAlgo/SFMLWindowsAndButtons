@@ -2,10 +2,10 @@
 #ifndef MAIN_WINDOW_HEADER_H
 #define MAIN_WINDOW_HEADER_H
 #pragma region INCLUDES
-#include "StructuresAndOtherFunctions.h"
+#include "StructuresAndOtherFunctions.hpp"
 #include <iostream>
-#include <thread>
 #include <functional>
+#include <memory>
 
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>

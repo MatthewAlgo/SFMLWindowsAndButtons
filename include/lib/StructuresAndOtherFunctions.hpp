@@ -1,3 +1,5 @@
+// An object holder, a data structure made with and about pointers
+
 #pragma once
 #ifndef STRUCTURES_HEADER
 #define STRUCTURES_HEADER

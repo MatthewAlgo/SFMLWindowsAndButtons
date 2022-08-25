@@ -1,4 +1,4 @@
-#include "MainWindowHeader.h"
+#include "lib/MainWindowHeader.hpp"
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 
@@ -77,39 +77,32 @@ void MatthewsNamespace::MainWindowClass::DrawInsideMainWindow(sf::RenderWindow* 
 void MatthewsNamespace::MainWindowClass::RenderTextures(DoubleItemHolder<sf::RenderWindow, MainWindowClass> ITEM_HOLDER) {
 	// Inside a separate thread -> Background
 	BackGround = std::make_unique<ImageToBeDrawn>();
-	BackGround->TEXTURE.loadFromFile("BigSurWallpaper.png");
+	BackGround->TEXTURE.loadFromFile("res/greenwallpaper.jpeg");
 	BackGround->SPRITE.setTexture(BackGround->TEXTURE);
 	BackGround->SPRITE.setScale(0.5, 0.5);
 
 	// Inside a separate thread -> Menu Button
 	// First Button
-	MenuBox1.TEXTURE.loadFromFile("Rounded-Button.png");
+	MenuBox1.TEXTURE.loadFromFile("res/greenpill.png");
 	MenuBox1.SPRITE.setTexture(MenuBox1.TEXTURE);
-	MenuBox1.SPRITE.setPosition(WWidth / 3, WHeight / 10);
+	MenuBox1.SPRITE.setPosition(WWidth / 3, WHeight / 15);
 	MenuBox1.SPRITE.setScale(0.5, 0.5);
 
 	// Second Button
-	MenuBox2.TEXTURE.loadFromFile("Rounded-Button.png");
+	MenuBox2.TEXTURE.loadFromFile("res/greenpill.png");
 	MenuBox2.SPRITE.setTexture(MenuBox2.TEXTURE);
-	MenuBox2.SPRITE.setPosition(WWidth / 3, WHeight / 2.75);
+	MenuBox2.SPRITE.setPosition(WWidth / 3, WHeight / 3);
 	MenuBox2.SPRITE.setScale(0.5, 0.5);
 
 	// Render Font for text
-	GlobalWindowFont.loadFromFile("Fonts/Emulogic.ttf");
+	GlobalWindowFont.loadFromFile("res/google_fonts/ProductSans-Bold.ttf");
 	GreetingText.setFont(GlobalWindowFont);
 	GreetingText.setString("My Application");
 	GreetingText.setCharacterSize(24);
-	GreetingText.setFillColor(sf::Color::Blue);
+	GreetingText.setFillColor(sf::Color::Yellow);
 	GreetingText.setStyle(sf::Text::Bold);
-	GreetingText.setPosition(WWidth / 3.25, WHeight / 100);
-
-
-
-
-
+	GreetingText.setPosition(WWidth / 2.35, WHeight / 100);
 
 }
-void MatthewsNamespace::ShowWindowDetails(sf::RenderWindow* WINDOW, MatthewsNamespace::MainWindowClass* C) {
-
-}
+void MatthewsNamespace::ShowWindowDetails(sf::RenderWindow* WINDOW, MatthewsNamespace::MainWindowClass* C) {}
 #pragma endregion MAINCLASS_FUNC_IMPLEMENTATIONS
